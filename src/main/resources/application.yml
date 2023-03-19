@@ -1,0 +1,6 @@
+api:
+  use:
+    name: juso
+  juso:
+    uri: https://business.juso.go.kr/addrlink/addrLinkApi.do
+    key: devU01TX0FVVEgyMDIzMDMxNjIxMTcyNzExMzYwMjA=

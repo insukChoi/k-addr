@@ -1,0 +1,39 @@
+{
+  "results": {
+    "common": {
+      "totalCount": "1",
+      "currentPage": "1",
+      "countPerPage": "10",
+      "errorCode": "0",
+      "errorMessage": "정상"
+    },
+    "juso": [
+      {
+        "roadAddr": "서울특별시 마포구 성암로 301 (상암동)",
+        "roadAddrPart1": "서울특별시 마포구 성암로 301",
+        "roadAddrPart2": "(상암동)",
+        "jibunAddr": "서울특별시 마포구 상암동 1595 한국지역정보개발원(KLID Tower)",
+        "engAddr": "301 Seongam-ro, Mapo-gu, Seoul",
+        "zipNo": "03923",
+        "admCd": "1144012700",
+        "rnMgtSn": "114403113012",
+        "bdMgtSn": "1144012700115950000000001",
+        "detBdNmList": "",
+        "bdNm": "한국지역정보개발원(KLID Tower)",
+        "bdKdcd": "0",
+        "siNm": "서울특별시",
+        "sggNm": "마포구",
+        "emdNm": "상암동",
+        "liNm": "",
+        "rn": "성암로",
+        "udrtYn": "0",
+        "buldMnnm": "301",
+        "buldSlno": "0",
+        "mtYn": "0",
+        "lnbrMnnm": "1595",
+        "lnbrSlno": "0",
+        "emdNo": "03"
+      }
+    ]
+  }
+}
