@@ -57,15 +57,4 @@ class JusoApiClientTest {
     private static void successApiCall(final JusoApiResponseDto jusoResponseDto) {
         assertThat(jusoResponseDto.getCommon()).isNotNull();
     }
-
-    @ParameterizedTest
-    @ValueSource(strings = {"성남분당백현로265"})
-    @DisplayName("요구사항에 맞게 juso API 가 동작한다.")
-    void test111(String keyword) {
-        // when
-        final JusoApiResponseDto jusoResponseDto = jusoApiClient.callApi(keyword);
-
-        // then
-        successApiCall(jusoResponseDto);
-    }
 }
