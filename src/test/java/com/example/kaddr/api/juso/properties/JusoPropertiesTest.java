@@ -17,7 +17,9 @@ class JusoPropertiesTest {
     @Test
     @DisplayName("Juso Properties 값을 가져오는지 확인한다.")
     void jsoPropertiesTest() {
-        assertThat(jusoProperties.getUri()).as("URI").isEqualTo("https://business.juso.go.kr/addrlink/addrLinkApi.do");
-        assertThat(jusoProperties.getKey()).as("KEY").isEqualTo("devU01TX0FVVEgyMDIzMDMxNjIxMTcyNzExMzYwMjA=");
+        assertThat(jusoProperties.getUri()).as("URI")
+                .isEqualTo("https://business.juso.go.kr/addrlink/addrLinkApi.do");
+        assertThat(jusoProperties.getKey()).as("KEY")
+                .isEqualTo("devU01TX0FVVEgyMDIzMDMxNjIxMTcyNzExMzYwMjA=");
     }
 }

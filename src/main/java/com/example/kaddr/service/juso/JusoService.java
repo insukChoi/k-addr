@@ -43,7 +43,7 @@ public final class JusoService implements KAddrService {
                 if (dto.hasJuso()) {
                     dtoList.add(dto);
                 } else {
-                    retryShortenString(splitAddress, dtoList);
+                    retryCallWithShortenString(splitAddress, dtoList);
                 }
             }
         }
@@ -52,7 +52,7 @@ public final class JusoService implements KAddrService {
     }
 
     // 조회 결과가 없을시, 주소 문자열을 한글자씩 줄이면서 조회해본다.
-    private void retryShortenString(final String addressStr, final List<JusoApiResponseDto> dtoList) {
+    private void retryCallWithShortenString(final String addressStr, final List<JusoApiResponseDto> dtoList) {
         for (int i = 1; i < addressStr.length(); i++) {
             String shortenAddress = addressStr.substring(i);
             if (shortenAddress.length() < 2) break;

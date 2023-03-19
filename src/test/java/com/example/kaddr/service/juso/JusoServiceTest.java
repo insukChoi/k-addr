@@ -53,7 +53,7 @@ class JusoServiceTest {
         // when
         final JusoApiResponseDto.Juso bestMatchJuso = (JusoApiResponseDto.Juso) findBestMatchJusoMethod.invoke(
                 jusoService,
-                "길여사길주로부천에있는것같아요",
+                KEYWORD,
                 List.of(mockJusoApiResponseDto())
         );
 
@@ -63,7 +63,7 @@ class JusoServiceTest {
         assertThat(bestMatchJuso.getRn()).isEqualTo(EXPECTED_RESULT);
     }
 
-    private static JusoApiResponseDto mockJusoApiResponseDto() {
+    private JusoApiResponseDto mockJusoApiResponseDto() {
         return new JusoApiResponseDto(
                 new JusoApiResponseDto.Common(1, 1, 1, "0", "정상"),
                 List.of(

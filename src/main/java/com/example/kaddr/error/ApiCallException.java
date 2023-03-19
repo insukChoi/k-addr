@@ -6,6 +6,6 @@ public final class ApiCallException extends RuntimeException {
     }
 
     public ApiCallException(final String keyword, final Throwable cause) {
-        super("Api Call Exception by searching : " + keyword, cause);
+        super("Api Call Exception by keyword: " + keyword, cause);
     }
 }
